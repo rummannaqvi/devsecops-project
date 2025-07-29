@@ -1,14 +1,14 @@
-variable "aws_region" {
-  description = "AWS region where resources will be provisioned"
-  default     = "us-east-2"
+variable "azure_region" {
+  description = "Azure region where resources will be created"
+  default     = "East US"
 }
 
-variable "ami_id" {
-  description = "AMI ID for the EC2 instance"
-  default     = "ami-085f9c64a9b75eed5"
+variable "vm_size" {
+  description = "Azure VM size"
+  default     = "Standard_D2s_v3"
 }
 
-variable "instance_type" {
-  description = "Instance type for the EC2 instance"
-  default     = "t2.large"
+variable "ssh_public_key_path" {
+  description = "Path to your public SSH key file"
+  default     = "~/.ssh/id_rsa.pub"
 }
